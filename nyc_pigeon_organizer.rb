@@ -2,10 +2,8 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_data = {}
 
-  languages.each do |oo_or_functional, language_hash|
-    #:oo, {:ruby => {...}}
-    language_hash.each do |language, attribute_hash|
-      #:ruby, {:type => "interpreted"}
+  pigeon_data.each do |oo_or_functional, language_hash|
+
       attribute_hash.each do |attribute, str_value|
         #:type, "interpreted"
         if language_attributes[language].nil?
