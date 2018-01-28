@@ -4,8 +4,8 @@ def nyc_pigeon_organizer(data)
 
   pigeon_data.each do |key, value|
 
-      attribute_hash.each do |attribute, str_value|
-        #:type, "interpreted"
+      value.each do |attribute, str_value|
+
         if language_attributes[language].nil?
           #if language :ruby doesn't exist in new hash
           language_attributes[language] = {}  #initiate a new hash for the value of :ruby
