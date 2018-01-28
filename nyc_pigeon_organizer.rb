@@ -6,9 +6,9 @@ def nyc_pigeon_organizer(data)
 
       value.each do |attribute, str_value|
 
-        if language_attributes[language].nil?
+        if pigeon_data[language].nil?
           #if language :ruby doesn't exist in new hash
-          language_attributes[language] = {}  #initiate a new hash for the value of :ruby
+          pigeon_data[language] = {}  #initiate a new hash for the value of :ruby
         end
         # this would cause us problems if we had more than one attribute we're iterating over
         language_attributes[language][:style] ||= []  # create a :style key within that hash and set it equal to an empty array
