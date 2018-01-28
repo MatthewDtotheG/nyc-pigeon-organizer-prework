@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_data = {}
 
-  pigeon_data.each do |oo_or_functional, language_hash|
+  pigeon_data.each do |key, value|
 
       attribute_hash.each do |attribute, str_value|
         #:type, "interpreted"
